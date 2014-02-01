@@ -155,7 +155,7 @@ var methods = {
         this.data("tokenInputObject").add(item, skipCallbacks);
         return this;
     },
-    remove: function(item) {
+    remove: function(item, skipCallbacks) {
         this.data("tokenInputObject").remove(item, skipCallbacks);
         return this;
     },
