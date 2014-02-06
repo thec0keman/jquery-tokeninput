@@ -172,13 +172,9 @@ var methods = {
     },
     destroy: function () {
         if(this.data("tokenInputObject")){
-            this.data("tokenInputObject").clear();
-            var tmpInput = this;
-            var closest = this.parent();
-            closest.empty();
-            tmpInput.show();
-            closest.append(tmpInput);
-            return tmpInput;
+            this.data("tokenInputObject").clear(true);
+            this.parent().empty();
+            return;
         }
     }
 };
